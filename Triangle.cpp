@@ -1,21 +1,20 @@
 #include<bits/stdc++.h>
 using namespace std;
+int check(int a,int b,int c)
+{
+            if(a+b>c && a+c>b && b+c>a )
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
 int main(){
      int a,b,c,d;
     cin>>a>>b>>c>>d;
-    if(a+b>c || a+c>b || b+c>a )
-    {
-        cout<<"S"<<endl;
-    }
-    else if(a+b>d || a+d>b || d+b>a )
-    {
-        cout<<"S"<<endl;
-    }
-     else if(c+b>d || c+d>b || d+b>c )
-    {
-        cout<<"S"<<endl;
-    }
-     else if(a+c>d || a+d>c || d+c>a )
+    if(check(a,b,c) || check(a,b,d) || check(a,c,d) || check(b,c,d))
     {
         cout<<"S"<<endl;
     }
