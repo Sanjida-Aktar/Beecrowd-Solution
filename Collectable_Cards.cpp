@@ -5,7 +5,10 @@ int main(){
      cin>>t;
      while(t--)
      {
-        
+        int x,y;
+        cin>>x>>y;
+        int res = __gcd(x,y);
+        cout<<res<<endl;
      }
     return 0;
 }
