@@ -3,7 +3,11 @@ using namespace std;
 int main(){
      float a;
      cin>>a;
-     if(a<=0 || a>100)
+     if(a<=0)
+     {
+         cout<<"Fora de intervalo"<<endl;
+     }
+     else if(a>100)
      {
          cout<<"Fora de intervalo"<<endl;
      }
