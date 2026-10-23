@@ -15,8 +15,8 @@ return n;
 int main(){
      string name1,name2;
      int x,y;
-    cin>>name1;
-    cin>>name2;
+    getline(cin,name1);
+    getline(cin,name2);
     int sum1=0,sum2=0;
     for(int i=0;i<name1.length();i++){
         if((name1[i]>='a' && name1[i]<='z' )||(name1[i]>='A' && name1[i]<='Z' )){
